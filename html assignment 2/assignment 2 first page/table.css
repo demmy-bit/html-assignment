@@ -1,0 +1,29 @@
+.heading,body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: oblique;
+    background-color: white; 
+    text-decoration: white;   
+}
+.h1{
+    padding-left: 400px;
+    animation-duration: 2s;
+    animation-name: slide-in;
+}
+.section{
+    padding-left: 500px;
+    animation-duration: 2s;
+    animation-name: slide-in;
+}
+
+@keyframes slidein{
+    from{
+        margin-left: 100%;
+        width: 300%;
+
+    }
+    
+    to{
+        margin-left: 0%;
+        width: 100%;
+    }
+}

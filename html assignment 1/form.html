@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="./assignment.css">
+</head>
+<body>
+    <header>
+    <nav aria-labelledby="primary navigation">
+     <a href="./index.html">Home</a>
+    </nav>    
+    </header>
+   
+    <article id="contact">
+        <h1>Sign Up</h1>
+        <p>Take the next steps to apply at AltSchool Africa!!</p>
+
+        <form action="https://httpbin.org/get" method=" get"></form>
+          <fieldset>
+            <legend><h2>Personal Info</h2></legend>
+            <p>
+              <label>FirstName:<br></label>
+              <input
+                type="text"
+                name="firstName"
+                placeholder="Enter FirstName"
+                autocomplete="Enter Firstname"
+                id="FirstName"
+              />
+            </p>
+            <p>
+              <label>LastName:<br></label>
+              <input
+                type="text"
+                name="LastName"
+                placeholder="Enter LastName"
+                autocomplete="on"
+                required
+                id="lastName"
+              />
+            </p>
+            <p>
+                <label for="Gender">Gender:<br></label>
+                <input type="text" name="gender" id="gender" list="gender-list" placeholder="Select Gender"/>
+                <datalist id="gender-list">
+                  <option value="male"></option>
+                  <option value="female"></option>
+                  <option value="other"></option>
+                </datalist>
+            </p>
+            <p>
+                <label for="Birth">Date of Birth:</label>
+                <input
+                  type="text"
+                  name="Birth"
+                  placeholder="YYYY-MM-DD"
+                  autocomplete="on"
+                  required
+                  id="Birth"
+                />
+              </p>
+              <p>
+                <label for="Email">Email Address:</label>
+                <input
+                  type="text"
+                  name="Email"
+                  placeholder="Enter email address"
+                  autocomplete="on"
+                  required
+                  id="email"
+                />
+              </p>
+              <p>
+                <label>Phone Number:</label>
+                <input
+                  type="number"
+                  name="Phone"
+                  placeholder="+2348080722568"
+                  required
+                  id="Phone"
+                />
+              </p>
+              <p>
+                <label for="country">Country:</label>
+                  <select>
+                    <option>select your country</option>
+                  <option>Algeria</option>
+                  <option>Belgium </option>
+                  <option>Canada</option>
+                  <option> Denmark </option>
+                  <option> Salvador</option>
+                  <option>France</option>
+                  <option>Ghana</option>
+                  <option>Hawaii</option>
+                  <option>India</option>
+                  <option>Japan</option>
+                  <option>Korea</option>
+                  <option>Laos</option>
+                  <option>Mozambique</option>
+                  <option>Nigeria</option>
+                  <option>Oman</option>
+                  <option>Panama</option>
+                  <option>Qatar</option>
+                  <option>Rwanda</option>
+                  <option> South Africa</option>
+                  <option>Thailand</option>
+                  <option>uganda</option>
+                  <option>venezuela</option>
+                  <option>wales</option>
+                  <option>Yemen</option>
+                  </select>
+              </p> 
+              <p>
+                <label for="Residence">State/City of Residence:</label>
+                <input
+                  type="text"
+                  name="Residence"
+                  placeholder="Enter your state of residence"
+                  autocomplete="on"
+                  required
+                  id="Residence"
+                />
+              </p>
+              <p>
+                <label>How did you hear about Us?:</label>
+                <input type="text" name="channel" id="chnannel" placeholder="Select channel"/>
+              </p> 
+            <p>
+              <label>Password:</label>
+              <input
+                type="password"
+                name="Password"
+                placeholder="Your secret"
+                required
+                id="Password"
+              />
+            </p>
+            <p>
+                <label>confirm-Password:</label>
+                <input
+                  type="password"
+                  name="password"
+                  placeholder="Your secret"
+                  required
+                  id="password"
+                />
+              </p>
+       
+          </p> 
+          </fieldset>
+          <button type="submit">submit-> </button>
+          <button
+            type="submit"
+            formaction="https://httpbin.org/post"
+            formmethod="post"
+          >
+            Post
+          </button>
+          <button type="reset">Reset</button>
+        </article>
+</body>
+</html>

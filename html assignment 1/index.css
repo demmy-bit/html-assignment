@@ -1,0 +1,58 @@
+html,body{
+    background-color:white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    animation-duration: 2s;
+    animation-name: slide-in;
+}
+
+
+.heading{
+    align-items: center;
+    justify-content: center;
+    margin: 0 450px;
+    text-decoration: underline;
+}
+
+.h3{
+    margin: 0 550px;
+    text-decoration: underline;
+}
+
+.grid-container{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    margin-left: 30%;
+    width: 100%;
+
+}
+.sub-container{
+    background-color:grey;
+    width: 30%;
+    padding:23px ;
+    border-radius: 5px;
+    line-height: 25px;
+    
+}
+.title{
+    background-color: rgb(241, 0, 133);
+    padding:20px 50px ;
+    border-radius: 5px;
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin-top: -40px;
+    text-align: center;
+
+}
+@keyframes slide-in{
+    from{
+        margin-left: 100%;
+        width: 300%;
+    }
+    to{
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
